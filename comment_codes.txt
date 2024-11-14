@@ -1,0 +1,41 @@
+const [cart, setCart] = useState([]);
+
+    const addToCart = (dessert) => {
+        setCart([...cart, dessert]);
+    };
+
+    
+
+     import React from 'react';
+// import { useState } from 'react';
+import { useCart } from './CartContext';
+
+const AddToCartButton = ({ item }) => {
+    const { addItem } = useCart();
+    // const [quantity, setQuantity] = useState(0);
+
+    const handleAddToCart = () => {
+        // setQuantity(1);
+        addItem(item); // Adds the item to the cart
+        const confirmbtn = document.querySelector('.confirm-order-button');
+        confirmbtn.style.display = 'list-item';
+    };
+
+    // const increaseQuantity = () => {
+    //     setQuantity(quantity + 1);
+    // };
+
+    // const decreaseQuantity = () => {
+    //     if (quantity > 1) {
+    //         setQuantity(quantity - 1);
+    //     } else {
+    //         setQuantity(0); // Set to zero to remove item from cart
+    //     }
+    // };
+
+    return (
+        
+    );
+};
+
+export default AddToCartButton;

@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: 'italic';
+    src: url('/assets/fonts/RedHatText-Italic-VariableFont_wght.ttf')
+}
+
+@font-face {
+    font-family: 'akash';
+    src: url('/assets/fonts/RedHatText-VariableFont_wght.ttf')
+}
