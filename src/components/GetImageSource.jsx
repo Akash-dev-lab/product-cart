@@ -14,7 +14,7 @@ function GetImageSource(image) {
             } else if (width >= 480) {
                 setImageSrc(image.mobile); // Mobile size
             } else {
-                setImageSrc(image.thumbnail); // Thumbnail size (default)
+                setImageSrc(image.mobile); // Thumbnail size (default)
             }
         };
 

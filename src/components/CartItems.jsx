@@ -18,7 +18,7 @@ const CartItems = () => {
 
     return (
 
-        <div className="cart-container h-2/4 p-4 font-[akash] bg-white border rounded-lg w-2/5">
+        <div className="cart-container h-2/4 p-4 font-[akash] bg-white border rounded-lg w-full md:w-2/5">
             <h2 className='font-[akash] text-xl font-bold text-[#e74c3c]'>Your Cart ({getTotalItems()})</h2>
 
             {/* Conditional rendering for empty cart */}
